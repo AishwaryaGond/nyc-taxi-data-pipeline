@@ -21,7 +21,7 @@ The pipeline extracts taxi trip data, loads it into PostgreSQL, and applies tran
 
 These processed results are then visualized using Looker Studio to provide actionable insights into taxi usage patterns.
 
-## 🎯 Objective
+## Objective
 
 The objective of this project is to design a reproducible and automated data pipeline that converts raw transportation data into structured and queryable insights.
 
