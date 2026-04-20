@@ -47,16 +47,20 @@ The dashboard includes:
 ## 📸 Screenshots
 
 ### Airflow DAG
-![Airflow](screenshots/airflow.png)
+<img width="1464" height="798" alt="airflow" src="https://github.com/user-attachments/assets/2e3a8a68-e963-4bd8-8ed5-cc385a56c0d0" />
+
 
 ### Graph View
-![Graph](screenshots/graph.png)
+<img width="1457" height="780" alt="graph" src="https://github.com/user-attachments/assets/c6ae2bf5-18a6-43d2-897d-e7d9857f028b" />
+
 
 ### Postgres Output
-![Postgres](screenshots/postgres.png)
+<img width="356" height="159" alt="postgres" src="https://github.com/user-attachments/assets/adf49402-b28a-4000-bdff-76e4c55e9ee3" />
+
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+<img width="834" height="459" alt="dashboard" src="https://github.com/user-attachments/assets/03a78044-906a-4547-9f71-83057c1ddcb8" />
+
 
 ---
 
