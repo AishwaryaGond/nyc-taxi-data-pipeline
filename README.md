@@ -47,20 +47,16 @@ The dashboard includes:
 ## 📸 Screenshots
 
 ### Airflow DAG
-
-(Add screenshot)
+![Airflow](screenshots/airflow.png)
 
 ### Graph View
-
-(Add screenshot)
+![Graph](screenshots/graph.png)
 
 ### Postgres Output
-
-(Add screenshot)
+![Postgres](screenshots/postgres.png)
 
 ### Dashboard
-
-(Add screenshot)
+![Dashboard](screenshots/dashboard.png)
 
 ---
 
