@@ -66,7 +66,10 @@ The dashboard includes:
 
 ## How To Run
 
+
+```bash
 docker-compose up -d
+```
 
 After running the project, open Airflow at:
 
