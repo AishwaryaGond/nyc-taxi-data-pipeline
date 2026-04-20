@@ -81,6 +81,9 @@ http://localhost:8080
 * `ingestion/` → data ingestion logic
 * `dags/` → Airflow pipeline
 
+## 📁 Project Structure
+
+```
 datazoomcamp_project/
 │
 ├── docker/
@@ -94,7 +97,7 @@ datazoomcamp_project/
 │
 ├── README.md
 ├── .gitignore
----
+```
 
 ## Learnings
 
