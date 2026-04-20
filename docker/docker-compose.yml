@@ -1,0 +1,35 @@
+services:
+  postgres:
+    image: postgres:13
+    container_name: zoomcamp_postgres
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: ny_taxi
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+
+  airflow:
+    image: apache/airflow:2.7.1
+    container_name: airflow
+    depends_on:
+      - postgres
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////tmp/airflow.db
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    ports:
+      - "8080:8080"
+    command: bash -c "airflow db init && airflow users create \
+      --username airflow \
+      --password airflow \
+      --firstname admin \
+      --lastname admin \
+      --role Admin \
+      --email admin@example.com && airflow scheduler & airflow webserver"
+    volumes:
+      - ./dags:/opt/airflow/dags  
+      - /var/run/docker.sock:/var/run/docker.sock
+      
