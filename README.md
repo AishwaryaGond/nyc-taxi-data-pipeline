@@ -2,7 +2,29 @@
 
 ## Problem Description
 
-This project builds an end-to-end data pipeline to process NYC taxi trip data and generate daily analytical insights such as total trips and average distance.
+Urban transportation systems generate large volumes of trip data daily. However, raw taxi datasets are not directly usable for analytics due to their size, lack of structure, and absence of aggregated insights.
+
+This project focuses on building an end-to-end data pipeline to process NYC taxi trip data and transform it into meaningful analytical outputs.
+
+The key challenges addressed are:
+
+* Efficient ingestion of raw trip data into a database
+* Automating data workflows using orchestration tools
+* Transforming raw data into aggregated metrics for analysis
+* Enabling easy visualization for decision-making
+
+The pipeline extracts taxi trip data, loads it into PostgreSQL, and applies transformations to generate daily summaries such as:
+
+* Total number of trips per day
+* Average trip distance
+* Date-wise trends
+
+These processed results are then visualized using Looker Studio to provide actionable insights into taxi usage patterns.
+
+## 🎯 Objective
+
+The objective of this project is to design a reproducible and automated data pipeline that converts raw transportation data into structured and queryable insights.
+
 
 ---
 
