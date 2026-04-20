@@ -64,7 +64,9 @@ The dashboard includes:
 
 ---
 
-## Airflow Login Credentials
+## How To Run
+
+* docker-compose up -d
 
 After running the project, open Airflow at:
 
