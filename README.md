@@ -30,7 +30,34 @@ The objective of this project is to design a reproducible and automated data pip
 
 ## Architecture
 
-Data Source → Docker → PostgreSQL → Airflow → Transformation → Data Quality Check → Dashboard
+The project follows a simple batch data pipeline architecture:
+
+1. **Data Ingestion**
+
+   * Raw NYC taxi data is ingested using a Python script inside a Docker container.
+
+2. **Data Storage**
+
+   * The ingested data is stored in a PostgreSQL database.
+
+3. **Workflow Orchestration**
+
+   * Apache Airflow is used to orchestrate the pipeline.
+   * It schedules and executes ingestion and transformation tasks.
+
+4. **Data Transformation**
+
+   * SQL queries are used to transform raw data into aggregated tables (e.g., daily trip summary).
+
+5. **Data Visualization**
+
+   * Processed data is visualized using Looker Studio for analysis and insights.
+
+
+```
+Taxi Data → Ingestion Script → PostgreSQL → Airflow DAG → SQL Transformation → Looker Dashboard
+```
+
 
 ---
 
