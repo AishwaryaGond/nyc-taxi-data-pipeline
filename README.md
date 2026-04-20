@@ -1,6 +1,6 @@
 # NYC Taxi Data Engineering Pipeline
 
-## 📌 Problem Description
+## Problem Description
 
 This project builds an end-to-end data pipeline to process NYC taxi trip data and generate daily analytical insights such as total trips and average distance.
 
@@ -12,7 +12,7 @@ Data Source → Docker → PostgreSQL → Airflow → Transformation → Data Qu
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 * Docker
 * PostgreSQL
@@ -22,7 +22,7 @@ Data Source → Docker → PostgreSQL → Airflow → Transformation → Data Qu
 
 ---
 
-## 🔄 Pipeline Workflow
+## Pipeline Workflow
 
 1. Data ingestion using Python script
 2. Data stored in PostgreSQL (`yellow_taxi_data`)
@@ -32,7 +32,7 @@ Data Source → Docker → PostgreSQL → Airflow → Transformation → Data Qu
 
 ---
 
-## 📊 Dashboard
+## Dashboard
 
 🔗 <https://datastudio.google.com/reporting/e3ff2938-4c36-457f-a827-7a116410aa40
 >
@@ -44,7 +44,7 @@ The dashboard includes:
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Airflow DAG
 <img width="1464" height="798" alt="airflow" src="https://github.com/user-attachments/assets/2e3a8a68-e963-4bd8-8ed5-cc385a56c0d0" />
@@ -64,7 +64,7 @@ The dashboard includes:
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ```bash
 docker-compose up -d
@@ -75,15 +75,28 @@ http://localhost:8080
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 * `docker/` → Airflow + PostgreSQL setup
 * `ingestion/` → data ingestion logic
 * `dags/` → Airflow pipeline
 
+datazoomcamp_project/
+│
+├── docker/
+│   ├── docker-compose.yml
+│   └── dags/
+│       └── ingest_dag.py
+│
+├── ingestion/
+│   ├── Dockerfile
+│   └── ingest_data.py
+│
+├── README.md
+├── .gitignore
 ---
 
-## 💡 Learnings
+## Learnings
 
 * Built an end-to-end data pipeline
 * Implemented workflow orchestration using Airflow
