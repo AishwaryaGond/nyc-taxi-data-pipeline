@@ -64,16 +64,17 @@ The dashboard includes:
 
 ---
 
-## How to Run
+## Airflow Login Credentials
 
-```bash
-docker-compose up -d
-```
+After running the project, open Airflow at:
 
-Open Airflow:
 http://localhost:8080
 
----
+Use the following credentials:
+
+* **Username:** airflow
+* **Password:** airflow
+
 
 ## Project Structure
 
