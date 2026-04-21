@@ -115,7 +115,6 @@ The dashboard includes:
 
 ## How To Run
 
-
 ```bash
 docker-compose up -d
 ```
@@ -136,23 +135,20 @@ Use the following credentials:
 * `ingestion/` → data ingestion logic
 * `dags/` → Airflow pipeline
 
-## 📁 Project Structure
+
 
 ```
 datazoomcamp_project/
-│
-├── docker/
+├── docker/                # Airflow + Postgres setup
 │   ├── docker-compose.yml
-│   └── dags/
-│       └── ingest_dag.py
-│
-├── ingestion/
-│   ├── Dockerfile
-│   └── ingest_data.py
-│
+│   └── dags/              # Airflow DAGs and scripts
+│       ├── ingest_dag.py
+│       └── ingest_data.py
+├── ingestion/             # (optional local scripts)
 ├── README.md
 ├── .gitignore
 ```
+
 
 ## Learnings
 
